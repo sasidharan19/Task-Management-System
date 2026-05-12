@@ -1,1 +1,51 @@
-<p>login works!</p>
+<div class="login-container">
+  <mat-card class="login-card">
+
+    <h2>Task Management System</h2>
+
+    <form [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+
+        <input
+          matInput
+          type="email"
+          formControlName="email"
+        />
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+
+        <input
+          matInput
+          type="password"
+          formControlName="password"
+        />
+
+      </mat-form-field>
+
+      <p class="error"
+         *ngIf="errorMessage">
+
+        {{ errorMessage }}
+
+      </p>
+
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="isLoading">
+
+        {{ isLoading ? 'Logging in...' : 'Login' }}
+
+      </button>
+
+    </form>
+
+  </mat-card>
+</div>

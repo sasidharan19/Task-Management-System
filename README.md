@@ -9,27 +9,15 @@ This application supports JWT-based authentication and role-based access control
 # Live Demo
 
 ## Frontend
-Add deployed frontend URL here.
 
 ```txt
-https://your-frontend-url.com
+https://task-management-system-azure-five.vercel.app/
 ```
 
 ## Backend
-Add deployed backend URL here.
 
 ```txt
-https://your-backend-url.com
-```
-
----
-
-# GitHub Repository
-
-Add your repository link here.
-
-```txt
-https://github.com/your-username/task-management-system
+https://task-management-api-en8k.onrender.com
 ```
 
 ---
@@ -580,23 +568,6 @@ ng build
 - CI/CD pipeline
 - Refresh token authentication
 - Dark mode
-
----
-
-# Assumptions
-
-- One task is assigned to one user.
-- Only assigned users can update task status.
-- Admin user is seeded automatically on server startup.
-
----
-
-# Known Limitations
-
-- SQLite used for local development simplicity.
-- No refresh token implementation.
-- No file uploads.
-- No pagination implemented.
 
 ---
 
